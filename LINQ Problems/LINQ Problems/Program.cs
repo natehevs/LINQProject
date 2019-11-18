@@ -10,14 +10,11 @@ namespace LINQ_Problems
     {
         static void Main(string[] args)
         {
-            var words = new thProblem().GetWords();
-            var wordsWithTH =
-                from m in words
-                where m.Contains("th")
-                select m;
-            foreach (var word in wordsWithTH)
+            var names = new Problems().GetNames();
+            var namesThatDontDuplicate = names.Distinct();
+            foreach (var name in namesThatDontDuplicate)
             {
-                Console.WriteLine(word);
+                Console.WriteLine(name);
                 Console.ReadLine();
             }
         }
