@@ -10,6 +10,16 @@ namespace LINQ_Problems
     {
         static void Main(string[] args)
         {
+            var words = new thProblem().GetWords();
+            var wordsWithTH =
+                from m in words
+                where m.Contains("th")
+                select m;
+            foreach (var word in wordsWithTH)
+            {
+                Console.WriteLine(word);
+                Console.ReadLine();
+            }
         }
     }
 }
