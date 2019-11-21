@@ -8,15 +8,6 @@ namespace LINQ_Problems
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            var names = new Problems().GetNames();
-            var namesThatDontDuplicate = names.Distinct();
-            foreach (var name in namesThatDontDuplicate)
-            {
-                Console.WriteLine(name);
-                Console.ReadLine();
-            }
-        }
+        
     }
 }
